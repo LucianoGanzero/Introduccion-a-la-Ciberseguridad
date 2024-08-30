@@ -35,6 +35,7 @@ else:
     resultado = op1 - op2
 
 # Enviamos la respuesta de la cuenta, como bytes:
+print((str(resultado) + "\n").encode())
 con.send((str(resultado) + "\n").encode())
 
 # Imprimimos toda la respuesta del servidor
