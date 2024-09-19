@@ -8,7 +8,7 @@ for i in range(200):
     result = subprocess.run(
         ["gpg", "--decrypt", f"firmas/{i}.asc"],
     )
-
+    print(i)
     # Muestra la salida o error
     if result.returncode == 0:
         correctos.append(i)
